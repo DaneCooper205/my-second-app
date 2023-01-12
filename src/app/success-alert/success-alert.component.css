@@ -1,3 +1,7 @@
 p {
-    color: green
+    border: red;
+    background-color: lightgreen;
+    padding: 20px;
+    border-width:thick;
+    color: blue;
 }
