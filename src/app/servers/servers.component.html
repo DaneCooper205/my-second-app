@@ -1,3 +1,14 @@
+<label>User Name</label>
+<input
+type="text"
+class="form-control"
+[(ngModel)]="userName">
+<p>{{ userName }}</p> 
+<button 
+    class="btn btn-primary"
+    [disabled]="( this.userName.trim().length <1)"
+    (click)="onUpdateUser()">Update User</button>
+<hr>
 <label>Server Name</label>
 <!--<input
     type="text" 
@@ -8,6 +19,7 @@
     class="form-control"
     [(ngModel)]="serverName">
 <!-- <p>{{ serverName }}</p> -->
+
 <button 
     class="btn btn-primary"
     [disabled]="!allowNewServer"
