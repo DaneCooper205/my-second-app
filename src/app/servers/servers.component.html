@@ -25,6 +25,7 @@ class="form-control"
     [disabled]="!allowNewServer"
     (click)="onCreateServer()">AddServer</button>
 <!--<p [innerText] = "allowNewServer"></p> -->
-<p>{{serverCreationStatus}}</p>
+<!-- <p>{{serverCreationStatus}}</p> -->
+<p *ngIf="serverCreated">{{serverCreationStatus}} </p>
 <app-server></app-server>
 <app-server></app-server>
