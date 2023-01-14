@@ -10,6 +10,7 @@ export class ClickDisplayDetailsComponent implements OnInit{
   showSecret = false;
   secretData ='Secret password = tuna';
   log = [];
+  timelog = [];
 
 
   ngOnInit(): void {
@@ -19,7 +20,7 @@ export class ClickDisplayDetailsComponent implements OnInit{
   onToggleDetails(){
     this.showSecret = !this.showSecret;
     this.log.push ( this.log.length +1);
-   
+    this.timelog.push( new Date ());
   }
 
 }

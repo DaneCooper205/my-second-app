@@ -10,3 +10,11 @@
     {{logItem}}
 </div>
 
+<div 
+    *ngFor="let timeItem of timelog; let i = index" 
+    [ngStyle]="{backgroundColor: i>= 4? 'blue' :'transparent'}"
+    [ngClass]="{'white-text': i>=4}">
+    {{timeItem }}
+</div>
+
+
